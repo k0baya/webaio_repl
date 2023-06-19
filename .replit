@@ -1,0 +1,13 @@
+language = "nix"
+run = ["bash", "start.sh"]
+
+[packager]
+language = "nodejs-npm"
+
+[nix]
+channel = "stable-22_11"
+
+[debugger]
+
+[unitTest]
+language = "nodejs"
