@@ -1,11 +1,12 @@
-cd server && npm install ;
+cd server ;
 
 if [ ! -f "done" ]; then
+  npm install
   npm audit 
   npm audit fix
-  npm install
   echo "1" > done
 fi
+
 nohup npm start >/dev/null 2>&1 &
 
 while true ; do
